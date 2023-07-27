@@ -1,2 +1,2 @@
 # holbertonschool-web-development
-Web dev exercises at Holberton School
+Web dev exercises at Holberton School specialization
