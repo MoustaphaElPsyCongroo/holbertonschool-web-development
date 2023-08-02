@@ -1,9 +1,10 @@
 :root {
   --general-font-family: 'Source Sans Pro';
+  --general-secondary-color: #c271ff;
 
   --nav-link-color: white;
 
-  --catchphrase-emphasis-color: #c271ff;
+  --catchphrase-emphasis-color: var(--general-secondary-color);
 }
 
 @font-face {
@@ -46,11 +47,12 @@
 body {
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: top center;
   font-family: var(--general-font-family);
 }
 
+/* HEADER */
 header {
   margin-top: 35.02pt;
 }
@@ -98,7 +100,7 @@ nav li {
 .intro {
   text-align: center;
   color: white;
-  margin-top: 220pt;
+  margin-top: 120pt;
 }
 
 .catchphrases h1 {
@@ -130,8 +132,9 @@ nav li {
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
+/* PROS */
 .pros-intro {
-  margin-top: 168pt;
+  margin-top: 100pt;
 }
 
 .pros-intro h2 {
@@ -146,7 +149,7 @@ nav li {
 }
 
 .pros {
-  margin-top: 87pt;
+  margin-top: 67pt;
   display: flex;
   justify-content: center;
 }
@@ -165,4 +168,46 @@ nav li {
   font-size: 16px;
   font-style: italic;
   margin-top: 2pt;
+}
+
+/* QUOTES */
+.quotes {
+  background-color: var(--general-secondary-color);
+  color: white;
+  font-family: 'Source Sans Pro';
+  font-size: 22px;
+  margin-top: 44pt;
+}
+
+.quotes-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60pt 0;
+}
+
+.quotes-inner img {
+  margin-right: 45pt;
+}
+
+.quotes-inner div {
+  flex-basis: 45%;
+}
+
+.quotes-inner blockquote {
+  margin: 0;
+}
+
+.quotes-inner blockquote p {
+  margin-top: 0;
+}
+
+.quote-author {
+  font-weight: bold;
+  margin: 0;
+}
+
+.quote-role {
+  font-style: italic;
+  margin-top: 5pt;
 }
