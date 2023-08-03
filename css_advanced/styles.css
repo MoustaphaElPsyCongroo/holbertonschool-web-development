@@ -211,3 +211,59 @@ nav li {
   font-style: italic;
   margin-top: 5pt;
 }
+
+/* TUTORIALS */
+.tutorials {
+  margin-top: 50pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutorials h1 {
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.tutorials-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 20pt;
+}
+
+.tutorial {
+  flex-basis: 18%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tutorial:not(:first-child) {
+  margin-left: 20pt;
+}
+
+.tutorial h3 {
+  color: var(--general-secondary-color);
+}
+
+.tutorial + img {
+  width: 100%;
+}
+
+.play-button {
+  align-self: center;
+  position: absolute;
+  top: 10%;
+}
+
+.rating-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tutorial .duration {
+  color: var(--general-secondary-color);
+  font-weight: 600;
+  display: inline-block;
+}
