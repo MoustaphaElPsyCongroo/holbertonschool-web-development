@@ -267,3 +267,36 @@ nav li {
   font-weight: 600;
   display: inline-block;
 }
+
+/* MEMBERSHIP */
+.membership {
+  background-color: #071629;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membership h1 {
+  font-weight: lighter;
+  margin-top: 40pt;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  margin-top: 30pt;
+}
+
+.member {
+  flex-basis: 13%;
+  text-align: center;
+}
+
+.member:not(:first-of-type) {
+  margin-left: 60pt;
+}
+
+.membership button {
+  margin: 40pt 0;
+}
