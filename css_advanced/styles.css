@@ -1,6 +1,7 @@
 :root {
   --general-font-family: 'Source Sans Pro';
   --general-secondary-color: #c271ff;
+  --general-dark-color: #071629;
 
   --nav-link-color: white;
 
@@ -270,7 +271,7 @@ nav li {
 
 /* MEMBERSHIP */
 .membership {
-  background-color: #071629;
+  background-color: var(--general-dark-color);
   color: white;
   display: flex;
   flex-direction: column;
@@ -313,7 +314,7 @@ nav li {
   justify-content: center;
 }
 
-.row {
+.faq .row {
   flex-basis: 38%;
 }
 
@@ -336,4 +337,30 @@ nav li {
   font-weight: lighter;
   line-height: 2;
   margin-bottom: 50pt;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--general-dark-color);
+}
+
+.footer-container {
+  padding-top: 50pt;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials a:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+footer p {
+  color: gray;
+  font-weight: lighter;
+  text-align: center;
+  padding: 30pt 0;
+  margin: 0;
 }
