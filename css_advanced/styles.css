@@ -300,3 +300,40 @@ nav li {
 .membership button {
   margin: 40pt 0;
 }
+
+/* FAQ */
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-blocks-container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  flex-basis: 38%;
+}
+
+.item {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq h1 {
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+.item h2 {
+  font-size: 16px;
+}
+
+.item p {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 2;
+  margin-bottom: 50pt;
+}
